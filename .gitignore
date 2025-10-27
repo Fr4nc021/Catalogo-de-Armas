@@ -1,0 +1,63 @@
+# ============================================
+# 🚫 ARQUIVOS E PASTAS IGNORADOS - CATÁLOGO DE ARMAS
+# ============================================
+
+# Dependências
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.expo-shared/
+.expo-dev/
+.expo-source/
+.expo-web/
+
+# Histórico e sistema
+.history/
+.DS_Store
+Thumbs.db
+
+# Pastas e arquivos de imagens e produtos (não subir pro GitHub)
+assets/produtos/
+assets/imagens/
+assets/ImagemDestaque/
+assets/Logo/
+assets/icons/
+
+# Arquivos de dados
+*.json
+!package.json
+!app.json
+!tsconfig.json
+
+# ⚠️ (acima: ignora todos os .json, exceto os de configuração do projeto)
+
+# Arquivos e chaves sensíveis
+.env
+.env*.local
+*.key
+*.keystore
+*.p8
+*.p12
+*.jks
+*.pem
+*.mobileprovision
+
+# Metro (cache do bundler do React Native)
+.metro-health-check*
+
+# Debug e logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# Native folders (gerados pelo Expo ou EAS Build)
+ios/
+android/
+
+# TypeScript
+*.tsbuildinfo
