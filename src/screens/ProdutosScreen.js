@@ -139,8 +139,8 @@ export default function ProdutosScreen() {
             <TouchableOpacity key={i} activeOpacity={0.95} onPress={() => openModalAt(i)}>
               <Image
                 source={src}
-                style={[styles.imagemDestaque, { width }]}
-                contentFit="cover"
+                style={[styles.imagemDestaque]}
+                contentFit="contain" // mostra tudo, com barras laterais se precisar
                 transition={200}
               />
             </TouchableOpacity>
@@ -260,9 +260,9 @@ const styles = StyleSheet.create({
 
   destaqueWrap: { alignItems: "center", marginTop: 16, paddingHorizontal: 30 },
   imagemDestaque: {
-    width: Math.min(width * 0.92, 700),
-    aspectRatio: 1,
-    borderRadius: 14,
+    width: width,
+    height: height,
+    maxHeight: height, 
     backgroundColor: "#111",
   },
 
